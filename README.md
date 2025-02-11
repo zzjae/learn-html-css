@@ -16,13 +16,13 @@ git clone https://github.com/seulbinim/ssam-html-css.git
 git pull origin main
 ```
 
-## .gitignore 생성하기
+## 의존성 패키지 설치하기
 
 ```sh
-npx add-gitignore node windows osx visualstudiocode
+npm install
 ```
 또는
 ```sh
-add-gitignore node windows osx visualstudiocode
+npm i
 ```
-**add-gitignore 패키지를 전역으로 설치한 경우 npx 명령을 생략할 수 있음.**
+**패키지를 설치하기 전 반드시 git pull 명령을 사용하여 최신 내용으로 업데이트 필요**
