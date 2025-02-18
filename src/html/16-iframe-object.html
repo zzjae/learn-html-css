@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe object 요소</title>
+  </head>
+  <body>
+    <!-- iframe을 이용한 비디오 삽입 -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/9Bw25xu_zKI?si=QcwkbhN-L8h7r_xv"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <hr />
+    <figure>
+      <object
+        type="application/pdf"
+        data="/src/assets/pdf/wai-aria.pdf"
+        width="600"
+        height="1200"
+      ></object>
+      <figcaption>WAI-ARIA</figcaption>
+    </figure>
+  </body>
+</html>
