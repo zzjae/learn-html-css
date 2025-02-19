@@ -14,16 +14,81 @@
         <legend>폼 서식</legend>
         <div>
           <label for="userName">이름</label>
-          <input type="text" id="userName" />
+          <input
+            type="text"
+            name="userName"
+            id="userName"
+            required
+            aria-required="true"
+            placeholder="홍길동"
+          />
         </div>
         <div>
           <label for="userPassword">비밀번호</label>
-          <input type="password" id="userPassword" />
+          <input
+            type="password"
+            name="userPassword"
+            id="userPassword"
+            required
+            placeholder="8자리 이상"
+          />
         </div>
         <div>
           <label for="likelionSearch">검색</label>
-          <input type="search" id="likelionSearch" />
+          <input type="search" name="likelionSearch" id="likelionSearch" />
         </div>
+        <div>
+          <label for="userEmail">email</label>
+          <input type="email" name="userEmail" id="userEmail" required />
+        </div>
+        <div>
+          <label for="userPhone">연락처</label>
+          <input type="tel" name="userPhone" id="userPhone" required />
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="classLikelion"
+            id="classHTML"
+            checked
+            value="html"
+          />
+          <label for="classHTML">HTML</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            name="classLikelion"
+            id="classCSS"
+            value="css"
+          />
+          <label for="classCSS">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="classLikelion" id="classJS" value="js" />
+          <label for="classJS">JS</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="classLikelionTeam"
+            id="classRoom1"
+            checked
+            value="classRoom1"
+          />
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="classLikelionTeam"
+            id="classRoom2"
+            value=""
+          />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
+
+        <input type="submit" value="전송" />
       </fieldset>
     </form>
   </body>
