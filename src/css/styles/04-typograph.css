@@ -14,7 +14,6 @@ h1 {
 
 /* font 관련 속성 - 글자 크기, 굵기, 기울임꼴 */
 .size {
-  font-size: 24px;
   font-weight: 300;
   font-style: italic;
   line-height: 1.5;
