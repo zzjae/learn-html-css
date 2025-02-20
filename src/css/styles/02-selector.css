@@ -38,22 +38,10 @@ a[href$='pdf'] {
 }
 
 /* 가상 클래스 선택자 */
-a:link {
-  /* 모든 링크 */
-  color: black;
-}
-a:visited {
-  /* 방문한 적이 있는 링크 */
-  color: olive;
-}
-a:hover {
-  /* hover 됐을 경우 */
-  color: blue;
-}
-a:focus {
-  /* focus 됐을 경우 */
-  color: aqua;
-}
+/* 모든 링크 :link */
+/* 방문한 적이 있는 링크 :visited  */
+/* hover 됐을 경우 :hover */
+/* focus 됐을 경우 :focus  */
 
 /* 가상 요소 선택자 */
 /* h1::before {
