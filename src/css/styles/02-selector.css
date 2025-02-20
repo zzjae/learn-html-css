@@ -4,7 +4,7 @@ body {
 
 /* 태그 선택자 */
 p {
-  color: red;
+  /* color: red; */
 
   &:hover {
     background-color: skyblue;
@@ -56,9 +56,9 @@ a:focus {
 }
 
 /* 가상 요소 선택자 */
-h1::before {
+/* h1::before {
   content: '멋사';
 }
 h1::after {
   content: '13기';
-}
+} */

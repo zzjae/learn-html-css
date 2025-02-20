@@ -1,0 +1,27 @@
+/* :root {
+  font-size: 10px;
+} */
+
+body {
+  font-family: 'SUIT-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+/* font 관련 속성 - 글자 크기, 굵기, 기울임꼴 */
+.size {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  font-variant: small-caps;
+  font-family: 'pretendard variable', sans-serif;
+  /* font: bold italic small-caps 24px /1.5 'pretendard variable'; */
+}
+/* alt + z pixcel to rem */
+/* 단위 - rem */
+/* rem */
