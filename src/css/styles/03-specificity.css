@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+h1 {
+  font-size: 1em;
+}
+
+.ai {
+  background-color: orange;
+}
+body h2 + p {
+  background-color: yellow;
+}
+body p[class] {
+  background-color: lime;
+}
+#ai {
+  background-color: pink;
+}
+.ai.copliot {
+  border: 10px dotted blue;
+}
