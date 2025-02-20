@@ -1,0 +1,64 @@
+body {
+  background-color: white;
+}
+
+/* 태그 선택자 */
+p {
+  color: red;
+
+  &:hover {
+    background-color: skyblue;
+  }
+
+  &:focus {
+    border: 10px solid red;
+  }
+}
+
+/* 클래스 선택자 는 .*/
+.like {
+  color: green;
+}
+
+/* id 선택자 */
+#lion {
+  color: blue;
+}
+
+/* 속성 선택자 */
+[title] {
+  color: purple;
+}
+a[href^="https://"]
+{
+  text-decoration: none;
+}
+a[href$='pdf'] {
+  background-color: violet;
+}
+
+/* 가상 클래스 선택자 */
+a:link {
+  /* 모든 링크 */
+  color: black;
+}
+a:visited {
+  /* 방문한 적이 있는 링크 */
+  color: olive;
+}
+a:hover {
+  /* hover 됐을 경우 */
+  color: blue;
+}
+a:focus {
+  /* focus 됐을 경우 */
+  color: aqua;
+}
+
+/* 가상 요소 선택자 */
+h1::before {
+  content: '멋사';
+}
+h1::after {
+  content: '13기';
+}
