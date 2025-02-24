@@ -1,0 +1,20 @@
+body {
+  /* 배경 색상 */
+  background-color: hsl(180, 50%, 50%);
+  /* 배경 이미지 */
+  background-image: url(/src/assets/images/rabbit.png);
+  /* 배경 이미지 반복 */
+  background-repeat: no-repeat;
+  /* 배경 이미지 위치(단축 표기법) */
+  background-position: 30px 40px;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: 100px 130px;
+
+  /* 단축표기법 */
+  background:
+    url(/src/assets/images/cloud.png) no-repeat 0 100px fixed,
+    url(/src/assets/images/sun.png) no-repeat 100px 50px fixed,
+    linear-gradient(red, green),
+    pink;
+}
