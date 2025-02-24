@@ -1,0 +1,81 @@
+/* 전역 변수 정의 */
+/* :하나면 가상 클래스(슈도 클래스), ::는 가상요소(슈도 엘리먼트)*/
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --white: #fff;
+  --black: #000;
+  --red: #f00;
+  --green: #0f0;
+  --blue: #00f;
+
+  /* size */
+  --default: 1rem;
+  --small: 0.75rem;
+  --medium: 0.875rem;
+  --large: 1.125rem;
+}
+.text-card1 {
+  --bg-color: var(--green);
+  --border-color: var(--red);
+  h1 {
+    background-color: var(--green, #2ecc71);
+    /* #은 fallback(secondary없을 경우를 대비) */
+  }
+  p {
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+}
+.text-card2 {
+  --bg-color: var(--blue);
+  --border-color: var(--red);
+  h1 {
+    background-color: var(--green, #2ecc71);
+  }
+  p {
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+}
+
+/* .wrapper {
+  button.default {
+    font-size: var(--default);
+  }
+  button.small {
+    font-size: var(--small);
+  }
+  button.medium {
+    font-size: var(--medium);
+  }
+  button.large {
+    font-size: var(--large);
+  }
+} */
+.wrapper {
+  button {
+    font-size: var(--font-size);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  button.open {
+    --font-size: var(--small);
+    --bg-color: var(--green);
+    --text-color: var(--red);
+  }
+
+  button.close {
+    --font-size: var(--default);
+  }
+
+  button.popup {
+    --text-color: var(--blue);
+  }
+
+  button.info {
+    --bg-color: var(--white);
+  }
+}
