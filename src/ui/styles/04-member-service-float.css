@@ -1,0 +1,45 @@
+/* 스타일 초기화 */
+body *,
+body *::before,
+body::after {
+  box-sizing: border-box;
+}
+a {
+  text-transform: uppercase;
+  text-decoration-line: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+  margin-left: 0;
+}
+
+body {
+  font-family: 'SUIT Variable', sans-serif;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  color: black;
+  display: flow-root;
+  a {
+    float: left;
+  }
+  a:nth-child(n + 2):before {
+    content: '|';
+    margin: 0.5em;
+  }
+}
+/* 멤버 링크 */
+.member-link {
+  padding: 0;
+  color: black;
+  span {
+    float: left;
+    margin: 0 0.5em;
+  }
+  li {
+    float: left;
+  }
+}

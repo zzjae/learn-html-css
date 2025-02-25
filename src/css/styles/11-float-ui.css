@@ -1,0 +1,56 @@
+@import '/src/common/modern-reset.css';
+
+.card {
+  /* display: flow-root; */
+  background: white;
+  margin: 2em;
+  padding: 2em;
+  border: 1px solid #aaa;
+  border-radius: 0.5rem;
+
+  &.good-partner {
+    display: flow-root;
+  }
+  /* 제목 */
+  .subject {
+    /* background: skyblue; */
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    span {
+      vertical-align: top;
+
+      &[lang='en'] {
+        font-size: 0.5em;
+      }
+    }
+  }
+
+  /* 썸네일 */
+  .thumbnail {
+    --radius: 50%;
+
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    float: left;
+    margin: 1em;
+    padding: 0.625em;
+    width: 120px;
+    /* height: auto; */
+    /* 글들이 이미지를 따라 둥글게 변함 */
+    shape-outside: circle(50%);
+
+    img {
+      max-width: 100%;
+      border-radius: inherit;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      object-position: 0 -20px;
+    }
+  }
+
+  /* 내용 */
+  .content {
+    margin-top: 0.625rem;
+  }
+}
