@@ -1,0 +1,111 @@
+@import '/src/common/modern-reset.css';
+
+.cart {
+  border: 6px solid #4d4d4d;
+  border-radius: 8px;
+  margin: 50px;
+  padding: 20px;
+}
+.cart-header {
+  /* 타이포 그래피 */
+  color: var(--gray-700, #4d4d4d);
+  text-align: left;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.product-name {
+  /* 타이포 그래피 */
+  color: var(--gray-700, #4d4d4d);
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 20px */
+  letter-spacing: -0.4px;
+}
+.product-price {
+  /* 타이포 그래피 */
+  color: var(--gray-700, #4d4d4d);
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.36px;
+}
+
+.cart-footer {
+  display: block;
+  justify-content: end;
+  p {
+    /* 타이포 그래피 */
+    color: var(--gray-700, #4d4d4d);
+    text-align: end;
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+}
+.product-list {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  /* 이미지 */
+  .product-image {
+    border-radius: 50%;
+    float: left;
+    padding-left: 8px;
+    img {
+      width: 64px;
+      aspect-ratio: 1/1;
+      border-radius: inherit;
+      margin-right: 12px;
+    }
+  }
+  .list-center {
+    padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .list-end {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    .quantity-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80px;
+      border-radius: 18px;
+      border: 1px solid var(--gray-300, #b3b3b3);
+      background: var(--gray-100, #eee);
+      padding: 4px 8px;
+      font-size: 14px;
+      font-weight: 600;
+
+      .quantity-btn {
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        color: #555;
+        padding: 4px 6px;
+        font-weight: bold;
+      }
+      .quantity-value {
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        flex-grow: 1; /* 숫자가 중앙에 오도록 설정 */
+      }
+    }
+  }
+}

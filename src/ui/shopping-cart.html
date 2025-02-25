@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoppingCart</title>
+    <link rel="stylesheet" href="/src/css/styles/02-selector.css" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="/src/ui/styles/shopping-cart.css" />
+  </head>
+  <body>
+    <h1>ShoppingCart</h1>
+    <div class="cart">
+      <!-- header -->
+      <div class="cart-header">장바구니</div>
+      <hr />
+      <!-- content -->
+      <div class="cart-body">
+        <!-- 물건 1 -->
+        <div class="product-list">
+          <div class="product-image">
+            <img src="/src/assets/food/milk.webp" alt="우유 사진" />
+          </div>
+          <div class="list-center">
+            <div class="product-name">1A 우유 900ML</div>
+            <div class="product-price">1,870 원</div>
+          </div>
+          <div class="list-end">
+            <div class="quantity-container">
+              <button class="quantity-btn" onclick="">-</button>
+              <span class="quantity-value">2</span>
+              <button class="quantity-btn" onclick="">+</button>
+            </div>
+          </div>
+        </div>
+        <!-- 물건 2 -->
+        <div class="product-list">
+          <div class="product-image">
+            <img src="/src/assets/food/milk.webp" alt="우유 사진" />
+          </div>
+          <div class="list-center">
+            <div class="product-name">1A 우유 900ML</div>
+            <div class="product-price">1,870 원</div>
+          </div>
+          <div class="list-end">
+            <div class="quantity-container">
+              <button class="quantity-btn" onclick="">-</button>
+              <span class="quantity-value">2</span>
+              <button class="quantity-btn" onclick="">+</button>
+            </div>
+          </div>
+        </div>
+        <!-- 물건 3 -->
+        <div class="product-list">
+          <div class="product-image">
+            <img src="/src/assets/food/milk.webp" alt="우유 사진" />
+          </div>
+          <div class="list-center">
+            <div class="product-name">1A 우유 900ML</div>
+            <div class="product-price">1,870 원</div>
+          </div>
+          <div class="list-end">
+            <div class="quantity-container">
+              <button class="quantity-btn" onclick="">-</button>
+              <span class="quantity-value">2</span>
+              <button class="quantity-btn" onclick="">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <hr />
+      <div class="cart-footer">
+        <p>구매 총액 : 8,600원</p>
+      </div>
+    </div>
+  </body>
+</html>
