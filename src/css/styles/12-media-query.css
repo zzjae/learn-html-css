@@ -1,0 +1,29 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/a11y.css';
+
+/* 기본 배경색  */
+body {
+  background-color: blue;
+  font-size: clamp(0.75rem, 2vw + 0.75rem, 3rem);
+
+  @media (min-width: 600px) {
+    background-color: pink;
+    font-size: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    background-color: lime;
+  }
+}
+
+/* 뷰포트 크기에 따라 결정되는 배경색 */
+@media (min-width: 1200px) {
+  body {
+    background-color: lime;
+  }
+}
+/* @media (orientation: landscpae) {
+  body {
+    background-color: orange;
+  }
+} */
