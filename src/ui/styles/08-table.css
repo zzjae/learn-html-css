@@ -1,0 +1,60 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+
+/* 테이블 스타일링 */
+.table-wrapper {
+  margin-inline: 20px;
+  margin-block: 100px;
+  block-size: 500px;
+  overflow: auto;
+}
+
+.table-styling {
+  inline-size: 100%;
+  border: 1px solid currentColor;
+  border-collapse: collapse;
+
+  caption {
+    font-size: 2rem;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .number {
+    inline-size: 10%;
+  }
+  .name {
+    inline-size: 20%;
+  }
+  .email {
+    inline-size: 40%;
+  }
+  .phone {
+    inline-size: 30%;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  td,
+  th {
+    padding: 10px;
+    border: 1px solid currentColor;
+  }
+
+  thead {
+    position: sticky;
+    top: 0px;
+  }
+  thead tr,
+  tfoot tr {
+    background: rgb(15, 15, 28);
+    color: white;
+  }
+  tbody tr:nth-child(even) {
+    background: var(--pastel-gray);
+  }
+}
